@@ -19,7 +19,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="preload" as="image" href="assets/img/heroi-retrato-celular.webp" media="(max-width: 899px)" type="image/webp">
+<link rel="preload" as="image" media="(max-width: 899px)" imagesrcset="assets/img/heroi-retrato-celular-480.webp 480w, assets/img/heroi-retrato-celular-960.webp 960w" imagesizes="100vw">
 <link rel="stylesheet" href="assets/css/base.css">
 <link rel="stylesheet" href="assets/css/style.css">
 <script type="application/ld+json">
@@ -115,11 +115,10 @@
     <div class="heroi__grade">
       <div class="heroi__midia midia">
         <picture>
-          <source media="(max-width: 899px)" srcset="assets/img/heroi-retrato-celular.webp" type="image/webp" width="1500" height="1200">
-          <source media="(max-width: 899px)" srcset="assets/img/heroi-retrato-celular.jpg" type="image/jpeg" width="1500" height="1200">
-          <source srcset="assets/img/heroi-retrato.webp" type="image/webp" width="1500" height="1875">
-          <img src="assets/img/heroi-retrato.jpg" alt="Augusto Bleil Marafon, advogado, no escritório." width="1500" height="1875" fetchpriority="high">
-        </picture>
+  <source type="image/webp" media="(max-width: 899px)" srcset="assets/img/heroi-retrato-celular-480.webp 480w, assets/img/heroi-retrato-celular-960.webp 960w" sizes="100vw">
+  <source type="image/webp" srcset="assets/img/heroi-retrato-960.webp 960w" sizes="100vw">
+  <img src="assets/img/heroi-retrato-960.jpg" alt="Augusto Bleil Marafon, advogado, no escritório." width="1500" height="1875" decoding="async" fetchpriority="high">
+</picture>
       </div>
       <div class="heroi__texto">
         <h1 class="heroi__titulo">Diante de um processo criminal, <strong>entender cada etapa já é parte da defesa.</strong></h1>
@@ -177,9 +176,10 @@
       <div class="escritorio__grade">
         <div class="escritorio__midia midia revelar">
           <picture>
-            <source srcset="assets/img/escritorio-mesa.webp" type="image/webp">
-            <img src="assets/img/escritorio-mesa.jpg" alt="Mesa do escritório com o logotipo Augusto Marafon Advocacia no monitor." width="576" height="720" loading="lazy">
-          </picture>
+  <source type="image/webp" media="(max-width: 899px)" srcset="assets/img/escritorio-mesa-480.webp 480w, assets/img/escritorio-mesa-960.webp 960w" sizes="100vw">
+  <source type="image/webp" srcset="assets/img/escritorio-mesa-960.webp 960w" sizes="50vw">
+  <img src="assets/img/escritorio-mesa-960.jpg" alt="Mesa do escritório com o logotipo Augusto Marafon Advocacia no monitor." width="576" height="720" decoding="async">
+</picture>
         </div>
         <ul role="list" class="lista-seta">
           <li class="revelar">
@@ -231,9 +231,10 @@
       <p class="secao__lead revelar">Da investigação aos recursos, estas são as fases em que a defesa criminal atua.</p>
       <div class="atuacao__midia midia revelar">
         <picture>
-          <source srcset="assets/img/atuacao-processos.webp" type="image/webp">
-          <img src="assets/img/atuacao-processos.jpg" alt="" width="2400" height="1600" loading="lazy">
-        </picture>
+  <source type="image/webp" media="(max-width: 899px)" srcset="assets/img/atuacao-processos-480.webp 480w, assets/img/atuacao-processos-960.webp 960w" sizes="100vw">
+  <source type="image/webp" srcset="assets/img/atuacao-processos-960.webp 960w, assets/img/atuacao-processos-1600.webp 1600w" sizes="50vw">
+  <img src="assets/img/atuacao-processos-960.jpg" alt="" width="2400" height="1600" decoding="async">
+</picture>
       </div>
       <ol role="list" class="grade-fases">
         <li class="revelar">
@@ -288,9 +289,10 @@
       <div class="advogado__grade">
         <div class="advogado__midia midia revelar">
           <picture>
-            <source srcset="assets/img/advogado-notebook.webp" type="image/webp">
-            <img src="assets/img/advogado-notebook.jpg" alt="Augusto Bleil Marafon trabalhando ao notebook no escritório." width="820" height="1025" loading="lazy">
-          </picture>
+  <source type="image/webp" media="(max-width: 899px)" srcset="assets/img/advogado-notebook-480.webp 480w, assets/img/advogado-notebook-960.webp 960w" sizes="100vw">
+  <source type="image/webp" srcset="assets/img/advogado-notebook-960.webp 960w" sizes="50vw">
+  <img src="assets/img/advogado-notebook-960.jpg" alt="Augusto Bleil Marafon trabalhando ao notebook no escritório." width="820" height="1025" decoding="async" loading="lazy">
+</picture>
         </div>
         <article class="perfil revelar">
           <h3 class="perfil__nome">Augusto Bleil Marafon</h3>
@@ -351,9 +353,10 @@
         </div>
         <div class="funciona__midia midia revelar">
           <picture>
-            <source srcset="assets/img/funciona-sala.webp" type="image/webp">
-            <img src="assets/img/funciona-sala.jpg" alt="Sala de atendimento do escritório, com mesa, notebook com o logotipo e estante de livros." width="822" height="616" loading="lazy">
-          </picture>
+  <source type="image/webp" media="(max-width: 899px)" srcset="assets/img/funciona-sala-480.webp 480w, assets/img/funciona-sala-960.webp 960w" sizes="100vw">
+  <source type="image/webp" srcset="assets/img/funciona-sala-960.webp 960w" sizes="50vw">
+  <img src="assets/img/funciona-sala-960.jpg" alt="Sala de atendimento do escritório, com mesa, notebook com o logotipo e estante de livros." width="822" height="616" decoding="async" loading="lazy">
+</picture>
         </div>
       </div>
     </div>
@@ -369,9 +372,10 @@
       <div class="duvidas__grade">
         <div class="duvidas__midia midia revelar">
           <picture>
-            <source srcset="assets/img/duvidas-documento.webp" type="image/webp">
-            <img src="assets/img/duvidas-documento.jpg" alt="" width="1200" height="1500" loading="lazy">
-          </picture>
+  <source type="image/webp" media="(max-width: 899px)" srcset="assets/img/duvidas-documento-480.webp 480w, assets/img/duvidas-documento-960.webp 960w" sizes="100vw">
+  <source type="image/webp" srcset="assets/img/duvidas-documento-960.webp 960w" sizes="50vw">
+  <img src="assets/img/duvidas-documento-960.jpg" alt="" width="1200" height="1500" decoding="async" loading="lazy">
+</picture>
         </div>
         <div class="duvidas__lista">
           <details class="acordeao revelar">
@@ -439,9 +443,10 @@
         </dl>
         <div class="contato__midia midia revelar">
           <picture>
-            <source srcset="assets/img/contato-placa.webp" type="image/webp">
-            <img src="assets/img/contato-placa.jpg" alt="Placa do escritório Augusto Marafon Advocacia na porta da sala." width="440" height="330" loading="lazy">
-          </picture>
+  <source type="image/webp" media="(max-width: 899px)" srcset="assets/img/contato-placa-480.webp 480w, assets/img/contato-placa-960.webp 960w" sizes="100vw">
+  <source type="image/webp" srcset="assets/img/contato-placa-960.webp 960w" sizes="50vw">
+  <img src="assets/img/contato-placa-960.jpg" alt="Placa do escritório Augusto Marafon Advocacia na porta da sala." width="440" height="330" decoding="async" loading="lazy">
+</picture>
         </div>
       </div>
     </div>

@@ -43,7 +43,7 @@ h1, h2, h3 {
   font-family: var(--font-titulo);
   font-weight: 700;
   text-transform: uppercase;
-  line-height: 0.96;
+  line-height: 1.08; /* 0.96 fazia os acentos (É, Á) encostarem na linha de cima */
   letter-spacing: -0.02em;
   text-wrap: balance;
 }
@@ -232,7 +232,7 @@ img { border-radius: var(--raio); }
   padding: var(--space-5) var(--gutter) var(--space-8);
 }
 .heroi__titulo {
-  font-size: 2.25rem; font-weight: 300; line-height: 0.96;
+  font-size: 2.25rem; font-weight: 300; line-height: 1.08;
 }
 .heroi__titulo strong { font-weight: 700; }
 .heroi__rodape { display: flex; flex-direction: column; gap: var(--space-5); }
@@ -245,13 +245,20 @@ img { border-radius: var(--raio); }
 .heroi__lead { font-size: 1.125rem; line-height: 1.55; order: 3; }
 .heroi__acoes { display: flex; flex-direction: column; gap: var(--space-3); order: 2; }
 .heroi__acoes .botao { width: 100%; }
+@media (max-width: 899px) {
+  /* Exceção deste site (pedido do Armin, 06/10/2026): no celular a headline fica acima da foto. */
+  .heroi__texto { display: contents; }
+  .heroi__titulo { order: 1; padding: var(--space-6) var(--gutter) var(--space-5); }
+  .heroi__midia { order: 2; }
+  .heroi__rodape { order: 3; padding: var(--space-5) var(--gutter) var(--space-8); }
+}
 @media (max-width: 359px) {
   .heroi__midia { height: 24svh; min-height: 140px; }
   .heroi__titulo { font-size: 2rem; }
 }
 @media (min-width: 600px) and (max-width: 899px) {
   .heroi__midia { height: 40svh; }
-  .heroi__texto { width: min(100% - 2 * var(--gutter), var(--midia-tablet)); margin-inline: auto; padding-inline: 0; }
+  .heroi__titulo, .heroi__rodape { width: min(100% - 2 * var(--gutter), var(--midia-tablet)); margin-inline: auto; padding-inline: 0; }
   .heroi__titulo { font-size: 3rem; }
 }
 @media (min-width: 900px) {
